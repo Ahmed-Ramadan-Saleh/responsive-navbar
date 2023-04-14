@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation responsive</title>
+    <link rel="stylesheet" href="cs.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">ahmed</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </nav>
+        <div class="sspan">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="click" class="hide">
+            <a href="#">home</a>
+            <a href="#">projects</a>
+            <a href="#">services</a>
+            <a href="#">contact us</a>
+       </div>
+    </header>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus cumque, nulla beatae aperiam neque id amet reprehenderit optio, quis voluptate repellendus corrupti odit? Sunt ratione non iusto sequi distinctio.</p>
+    
+    <script>
+    let sspan =document.querySelector(".sspan");
+    let click =document.querySelector(".click");
+    sspan.onclick =function(){
+        click.classList.toggle('hide')
+    }
+    </script>
+</body>
+</html>
